@@ -125,6 +125,13 @@
 #section-rogue .text {
     color: black;
 }
+#section-bard, #section-bard .item-icon {
+    background-color: pink;
+    border-color: pink;
+}
+#section-bard .text {
+    color: black;
+}
 #section-movement, #section-movement .item-icon {
     background-color: maroon;
     border-color: maroon;

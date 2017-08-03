@@ -59,6 +59,8 @@ function fill_section(data, parentname, type) {
 function init() {
 	fill_section(data_rogue, "basic-rogue", "Rogue");
 	fill_section(data_rogue_assassin, "basic-rogue-assassin", "Rogue");
+	fill_section(data_bard_spells, "bard-spells", "Bard");
+	fill_section(data_bard, "basic-bard", "Bard");
 	fill_section(data_movement, "basic-movement", "Movement");
 	var modal = document.getElementById("modal");
 	modal.onclick = hide_modal;
