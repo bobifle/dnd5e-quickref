@@ -14,6 +14,17 @@ data_movement = [
         ]
     },
     {
+        title: "Dash",
+        icon: "running-ninja",
+        subtitle: "Cost: 5ft per 10ft",
+        description: "Movement cost: 5ft per 10ft moved",
+        reference: "PHB, pg. 190.",
+        bullets: [
+			"When you take the Dash action, you gain extra movement for the current turn. The increase equals your speed, after applying any modifiers. With a speed of 30 feet, for example, you can move up to 60 feet on your turn if you dash.",
+			"Any increase or decrease to your speed changes this additional movement by the same amount. If your speed of 30 feet is reduced to 15 feet, for instance, you can move up to 30 feet this turn if you dash.",
+        ]
+    },
+    {
         title: "Climb",
         icon: "crags",
         subtitle: "Cost: 10ft per 5ft",

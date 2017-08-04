@@ -132,6 +132,13 @@
 #section-bard .text {
     color: black;
 }
+#section-bonus, #section-bonus .item-icon {
+    background-color: blue;
+    border-color: blue;
+}
+#section-bonus .text {
+    color: black;
+}
 #section-movement, #section-movement .item-icon {
     background-color: maroon;
     border-color: maroon;

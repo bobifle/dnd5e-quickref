@@ -62,6 +62,7 @@ function init() {
 	fill_section(data_bard_spells, "bard-spells", "Bard");
 	fill_section(data_bard, "basic-bard", "Bard");
 	fill_section(data_movement, "basic-movement", "Movement");
+	fill_section(data_bonus, "basic-bonus", "Bonus");
 	var modal = document.getElementById("modal");
 	modal.onclick = hide_modal;
 }
