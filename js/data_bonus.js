@@ -4,9 +4,9 @@ data_bonus = [
 	data_movement.find(efind("Dash")),
     {
         title: "Hide",
-        icon: "hide",
-        subtitle: "Stealth(dex) check, no direct line of sight",
-        reference: "PHB, pg. 164",
+        icon: "night-vision",
+        subtitle: "Stealth check, no direct LoS",
+        reference: "PHB, pg. ???",
         description: "Hide against Widsom (perception)",
         bullets: [
 			"When you take the Hide action, you make a Dexterity (Stealth) check in an attempt to hide, following the rules for Hiding. If you succeed, you gain certain benefits, as described in the 'Unseen Attackers and Targets' section.",
@@ -14,10 +14,10 @@ data_bonus = [
     },	
 	{
         title: "Disengage",
-        icon: "hide",
-        subtitle: "Stealth(dex) check, no direct line of sight",
-        reference: "PHB, pg. 164",
-        description: "Hide against Widsom (perception)",
+        icon: "acrobatic",
+        subtitle: "Next move don't provoke any opportunity",	
+        reference: "PHB, pg. ???",
+        description: "If you take the Disengage action, your Movement doesn’t provoke opportunity attacks for the rest of the turn.",
         bullets: [
         ]
     },	
