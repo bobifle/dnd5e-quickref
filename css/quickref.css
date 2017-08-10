@@ -242,6 +242,7 @@
     background-color: black;
     border-color: black;
 }
+
 #section-rogue .text {
     color: black;
 }
@@ -252,6 +253,7 @@
 #section-bard .text {
     color: #B10DC9;
 }
+
 #section-bonus, #section-bonus .item-icon {
     background-color: #0074D9;
     border-color: #0074D9;
@@ -259,12 +261,21 @@
 #section-bonus .text {
 	color: #0074D9;
 }
+
 #section-movement, #section-movement .item-icon {
     background-color: maroon;
     border-color: maroon;
 }
 #section-movement .text {
     color: maroon;
+}
+
+#section-spells, #section-spells .item-icon {
+    background-color: #3D9970;
+    border-color: #3D9970;
+}
+#section-spells .text {
+    color: #3D9970;
 }
 
 #section-action, #section-action .item-icon {

@@ -4,6 +4,7 @@ import urllib
 import zipfile
 import os
 import logging
+import glob
 
 log = logging.getLogger()
 
@@ -13,7 +14,7 @@ log = logging.getLogger()
 url = """http://game-icons.net/archives/png/zip/ffffff/transparent/game-icons.net.png.zip"""
 
 # list of icons not present in the download anymore
-old = ['crawl.png']
+old = ['crawl.png'] + glob.glob('white-book*')
 
 def main():
 	filehandle, _ = urllib.urlretrieve(url)
