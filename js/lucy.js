@@ -24,6 +24,32 @@ function add_quickref_item(parent, data, type) {
     parent.appendChild(item);
 }
 
+function add_dndapi_item(parent, data, type) {
+    var icon = "perspective-dice-six-faces-one";
+    var subtitle = data.subtitle || "";
+    var title = data.name || "[no title]";
+
+    var item = document.createElement("div");
+    item.className += "item itemsize"
+    item.innerHTML =
+    '\
+    <div class="item-icon iconsize icon-' + icon + '"></div>\
+    <div class="item-text-container text">\
+        <div class="item-title">' + title + '</div>\
+        <div class="item-desc">' + subtitle + '</div>\
+    </div>\
+    ';
+
+    var style = window.getComputedStyle(parent.parentNode.parentNode);
+    var color = style.backgroundColor;
+
+    item.onclick = function () {
+        show_modal(data, color, type);
+    }
+
+    parent.appendChild(item);
+}
+
 function show_modal(data, color, type) {
     var title = data.title || "[no title]";
     var subtitle = data.description || data.subtitle || "";
@@ -52,7 +78,11 @@ function hide_modal() {
 function fill_section(data, parentname, type) {
     var parent = document.getElementById(parentname);
     data.forEach(function (item) {
-        add_quickref_item(parent, item, type);
+		if (type == "Spells") {
+	        add_dndapi_item(parent, item, type);
+		} else {
+	        add_quickref_item(parent, item, type);
+		}
     });
 }
 
@@ -63,6 +93,7 @@ function init() {
 	fill_section(data_bard, "basic-bard", "Bard");
 	fill_section(data_movement, "basic-movement", "Movement");
 	fill_section(data_bonus, "basic-bonus", "Bonus");
+	fill_section(data_spells, "basic-spells", "Spells");
 	var modal = document.getElementById("modal");
 	modal.onclick = hide_modal;
 }
