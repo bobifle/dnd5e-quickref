@@ -37,10 +37,10 @@ function add_quickref_item(parent, data, type) {
 }
 
 function show_modal(data, color, type) {
-    var title = data.title || "[no title]";
+    var title = data.title || data.name || "[no title]";
     var subtitle = data.description || data.subtitle || "";
-    var bullets = data.bullets || [];
-    var reference = data.reference || "";
+    var bullets = data.bullets || data.desc || [];
+    var reference = data.reference || data.page || "";
     type = type || "";
     color = color || "black"
 
@@ -69,14 +69,13 @@ function fill_section(data, parentname, type) {
 }
 
 function init() {
-	fill_section(data_rogue, "basic-rogue", "Rogue");
-	fill_section(data_rogue_assassin, "basic-rogue-assassin", "Rogue");
-	fill_section(data_bard_spells, "bard-spells", "Bard");
-	fill_section(data_bard, "basic-bard", "Bard");
-	fill_section(data_movement, "basic-movement", "Movement");
-	fill_section(data_bonus, "basic-bonus", "Bonus");
+	if (typeof data_rogue !== 'undefined') {fill_section(data_rogue, "basic-rogue", "Rogue");};
+	if (typeof data_rogue_assassin !== 'undefined') {fill_section(data_rogue_assassin, "basic-rogue", "Rogue");};
+	if (typeof data_bard !== 'undefined') {fill_section(data_bard, "basic-bard", "Rogue");};
+	if (typeof data_movement !== 'undefined') {fill_section(data_movement, "basic-movement", "Rogue");};
+	if (typeof data_bonus !== 'undefined') {fill_section(data_bonus, "basic-bonus", "Rogue");};
 	data_spells.sort(function (a,b) {if (a.level<b.level) return -1; if(a.level>b.level) {return 1}; return 0;})
-	fill_section(data_spells, "basic-spells", "Spells");
+	fill_section(data_spells, "basic-spells", "Spell");
 	var modal = document.getElementById("modal");
 	modal.onclick = hide_modal;
 }
