@@ -1,18 +1,24 @@
 function item_getIcon(data) {
 	var icon = data.icon;
 	if (!icon) {
-		if (data.school) { // it's a spell
+		if (data.url.indexOf("spells") !== -1) {
+			// chose an book icon feature the spell level
 			icon = 'white-book-' + data.level;
-		} else {
-    		icon = "perspective-dice-six-faces-one";
+		}
+		if (data.url.indexOf("features") !== -1) {
+			if (data.class.name == "Barbarian") {
+				icon = "barbarian";
+			} else {
+				icon = "juggler";
+			}
 		}
 	}
-	return icon;
+	return icon || "perspective-dice-six-faces-one";
 }
 
 function item_getSubtitle(data) {
 	if (data.subtitle) {return data.subtitle;};
-	if (data.casting_time) {
+	if (data.url.indexOf("spells") !== -1) {
 		sub = data.casting_time + ", " + data.range + ", ";
 		if (typeof data.components == "string") { sub += data.components;};
 		if (typeof data.components != "string") { sub += data.components.join("");};
@@ -20,16 +26,24 @@ function item_getSubtitle(data) {
 		if (data.ritual == "yes") {sub += ", ritual"}
 		return sub;
 	}
+	if (data.url.indexOf("features") !== -1) {
+		sub = ""
+		if (data.subclass) {sub +=  data.subclass.name + " ";}
+		sub += "Level " + data.level;
+		return sub;
+	}
 	return "";
 }
 function item_getBullets(data) {
 	if (data.bullets) {return data.bullets;};
 	bullets = [];
-	if (data.classes) { // extracted from online dnd api
+	if (data.url.indexOf("spells") !== -1) {
 		bullets.push("Level " + data.level + " " + data.school.name + " spell for"+ data.classes.map(function (e) {return e["name"];}).join(","));
 		bullets.push('casting time: ' + data.casting_time + ', Duration: '+ data.duration + ', Range: ' + data.range);
 		bullets.push('concentration: ' + data.concentration + ', ritual: ' + data.ritual)
 		bullets.push('material: ' + data.material)
+	}
+	if (data.url) { // extracted from online dnd api
 		bullets.push(data.desc);
 	}
 	return bullets;
@@ -52,8 +66,8 @@ function add_quickref_item(parent, data, type) {
     </div>\
     ';
 
-    var style = window.getComputedStyle(parent.parentNode.parentNode);
-    var color = style.backgroundColor;
+	var style = window.getComputedStyle(parent.parentNode.parentNode);
+	var color = style.backgroundColor;
 
     item.onclick = function () {
         show_modal(data, color, type);
@@ -78,8 +92,8 @@ function show_modal(data, color, type) {
     $("#modal-subtitle").text(subtitle);
     $("#modal-reference").text(reference);
 
-    var bullets_html = bullets.map(function (item) { return "<p class=\"fonstsize\">" + item + "</p>"; }).join("\n<hr>\n");
-    $("#modal-bullets").html(bullets_html);
+	var bullets_html = bullets.map(function (item) { return "<p class=\"fonstsize\">" + item + "</p>"; }).join("\n<hr>\n");
+	$("#modal-bullets").html(bullets_html);
 }
 
 function hide_modal() {
@@ -89,6 +103,7 @@ function hide_modal() {
 
 function fill_section(data, parentname, type) {
     var parent = document.getElementById(parentname);
+	if (!parent) {return;}
     data.forEach(function (item) {
 		add_quickref_item(parent, item, type);
     });
@@ -102,6 +117,10 @@ function init() {
 	if (typeof data_bonus !== 'undefined') {fill_section(data_bonus, "basic-bonus", "Rogue");};
 	data_spells.sort(function (a,b) {if (a.level<b.level) return -1; if(a.level>b.level) {return 1}; return 0;})
 	fill_section(data_spells, "basic-spells", "Spell");
+
+	var barb_feat = data_features.filter(function (e) {return e["class"]["name"] == "Barbarian"});
+	fill_section(barb_feat, 'features-barbarian', 'Feat')
+
 	var modal = document.getElementById("modal");
 	modal.onclick = hide_modal;
 }

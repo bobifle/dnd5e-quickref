@@ -238,6 +238,17 @@
 .stroke-silver { stroke: #DDDDDD; }
 .stroke-black { stroke: #111111; }
 
+
+#section-features, #section-features .item-icon {
+    background-color: black;
+    border-color: black;
+}
+
+#section-features .text {
+    color: black;
+}
+
+
 #section-rogue, #section-rogue .item-icon {
     background-color: black;
     border-color: black;

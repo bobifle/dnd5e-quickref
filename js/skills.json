@@ -1,0 +1,236 @@
+[
+    {
+        "ability_score": {
+            "url": "http://www.dnd5eapi.co/api/ability-scores/1", 
+            "name": "STR"
+        }, 
+        "index": 1, 
+        "name": "Acrobatics", 
+        "url": "http://www.dnd5eapi.co/api/skills/1", 
+        "_id": "58f40b8dc9e7ce9f72153252", 
+        "desc": [
+            "Your Dexterity (Acrobatics) check covers your attempt to stay on your feet in a tricky situation, such as when you\u2019re trying to run across a sheet of ice, balance on a tightrope, or stay upright on a rocking ship\u2019s deck. The GM might also call for a Dexterity (Acrobatics) check to see if you can perform acrobatic stunts, including dives, rolls, somersaults, and flips."
+        ]
+    }, 
+    {
+        "ability_score": {
+            "url": "http://www.dnd5eapi.co/api/ability-scores/5", 
+            "name": "WIS"
+        }, 
+        "index": 2, 
+        "name": "Animal Handling", 
+        "url": "http://www.dnd5eapi.co/api/skills/2", 
+        "_id": "58f40b8dc9e7ce9f7215324c", 
+        "desc": [
+            "When there is any question whether you can calm down a domesticated animal, keep a mount from getting spooked, or intuit an animal\u2019s intentions, the GM might call for a Wisdom (Animal Handling) check. You also make a Wisdom (Animal Handling) check to control your mount when you attempt a risky maneuver."
+        ]
+    }, 
+    {
+        "ability_score": {
+            "url": "http://www.dnd5eapi.co/api/ability-scores/4", 
+            "name": "INT"
+        }, 
+        "index": 3, 
+        "name": "Arcana", 
+        "url": "http://www.dnd5eapi.co/api/skills/3", 
+        "_id": "58f40b8dc9e7ce9f72153259", 
+        "desc": [
+            "Your Intelligence (Arcana) check measures your ability to recall lore about spells, magic items, eldritch symbols, magical traditions, the planes of existence, and the inhabitants of those planes."
+        ]
+    }, 
+    {
+        "ability_score": {
+            "url": "http://www.dnd5eapi.co/api/ability-scores/1", 
+            "name": "STR"
+        }, 
+        "index": 4, 
+        "name": "Athletics", 
+        "url": "http://www.dnd5eapi.co/api/skills/4", 
+        "_id": "58f40b8dc9e7ce9f7215324b", 
+        "desc": [
+            "Your Strength (Athletics) check covers difficult situations you encounter while climbing, jumping, or swimming."
+        ]
+    }, 
+    {
+        "ability_score": {
+            "url": "http://www.dnd5eapi.co/api/ability-scores/6", 
+            "name": "CHA"
+        }, 
+        "index": 5, 
+        "name": "Deception", 
+        "url": "http://www.dnd5eapi.co/api/skills/5", 
+        "_id": "58f40b8dc9e7ce9f7215324e", 
+        "desc": [
+            "Your Charisma (Deception) check determines whether you can convincingly hide the truth, either verbally or through your actions. This deception can encompass everything from misleading others through ambiguity to telling outright lies. Typical situations include trying to fast- talk a guard, con a merchant, earn money through gambling, pass yourself off in a disguise, dull someone\u2019s suspicions with false assurances, or maintain a straight face while telling a blatant lie."
+        ]
+    }, 
+    {
+        "ability_score": {
+            "url": "http://www.dnd5eapi.co/api/ability-scores/4", 
+            "name": "INT"
+        }, 
+        "index": 6, 
+        "name": "History", 
+        "url": "http://www.dnd5eapi.co/api/skills/6", 
+        "_id": "58f40b8dc9e7ce9f7215324d", 
+        "desc": [
+            "Your Intelligence (History) check measures your ability to recall lore about historical events, legendary people, ancient kingdoms, past disputes, recent wars, and lost civilizations."
+        ]
+    }, 
+    {
+        "ability_score": {
+            "url": "http://www.dnd5eapi.co/api/ability-scores/5", 
+            "name": "WIS"
+        }, 
+        "index": 7, 
+        "name": "Insight", 
+        "url": "http://www.dnd5eapi.co/api/skills/7", 
+        "_id": "58f40b8dc9e7ce9f72153250", 
+        "desc": [
+            "Your Wisdom (Insight) check decides whether you can determine the true intentions of a creature, such as when searching out a lie or predicting someone\u2019s next move. Doing so involves gleaning clues from body language, speech habits, and changes in mannerisms."
+        ]
+    }, 
+    {
+        "ability_score": {
+            "url": "http://www.dnd5eapi.co/api/ability-scores/6", 
+            "name": "CHA"
+        }, 
+        "index": 8, 
+        "name": "Intimidation", 
+        "url": "http://www.dnd5eapi.co/api/skills/8", 
+        "_id": "58f40b8dc9e7ce9f7215324f", 
+        "desc": [
+            "When you attempt to influence someone through overt threats, hostile actions, and physical violence, the GM might ask you to make a Charisma (Intimidation) check. Examples include trying to pry information out of a prisoner, convincing street thugs to back down from a confrontation, or using the edge of a broken bottle to convince a sneering vizier to reconsider a decision."
+        ]
+    }, 
+    {
+        "ability_score": {
+            "url": "http://www.dnd5eapi.co/api/ability-scores/4", 
+            "name": "INT"
+        }, 
+        "index": 9, 
+        "name": "Investigation", 
+        "url": "http://www.dnd5eapi.co/api/skills/9", 
+        "_id": "58f40b8dc9e7ce9f72153251", 
+        "desc": [
+            "When you look around for clues and make deductions based on those clues, you make an Intelligence (Investigation) check. You might deduce the location of a hidden object, discern from the appearance of a wound what kind of weapon dealt it, or determine the weakest point in a tunnel that could cause it to collapse. Poring through ancient scrolls in search of a hidden fragment of knowledge might also call for an Intelligence (Investigation) check."
+        ]
+    }, 
+    {
+        "ability_score": {
+            "url": "http://www.dnd5eapi.co/api/ability-scores/5", 
+            "name": "WIS"
+        }, 
+        "index": 10, 
+        "name": "Medicine", 
+        "url": "http://www.dnd5eapi.co/api/skills/10", 
+        "_id": "58f40b8dc9e7ce9f7215325a", 
+        "desc": [
+            "A Wisdom (Medicine) check lets you try to stabilize a dying companion or diagnose an illness."
+        ]
+    }, 
+    {
+        "ability_score": {
+            "url": "http://www.dnd5eapi.co/api/ability-scores/4", 
+            "name": "INT"
+        }, 
+        "index": 11, 
+        "name": "Nature", 
+        "url": "http://www.dnd5eapi.co/api/skills/11", 
+        "_id": "58f40b8dc9e7ce9f7215325b", 
+        "desc": [
+            "Your Intelligence (Nature) check measures your ability to recall lore about terrain, plants and animals, the weather, and natural cycles."
+        ]
+    }, 
+    {
+        "ability_score": {
+            "url": "http://www.dnd5eapi.co/api/ability-scores/5", 
+            "name": "WIS"
+        }, 
+        "index": 12, 
+        "name": "Perception", 
+        "url": "http://www.dnd5eapi.co/api/skills/12", 
+        "_id": "58f40b8dc9e7ce9f72153253", 
+        "desc": [
+            "Your Wisdom (Perception) check lets you spot, hear, or otherwise detect the presence of something. It measures your general awareness of your surroundings and the keenness of your senses. For example, you might try to hear a conversation through a closed door, eavesdrop under an open window, or hear monsters moving stealthily in the forest. Or you might try to spot things that are obscured or easy to miss, whether they are orcs lying in ambush on a road, thugs hiding in the shadows of an alley, or candlelight under a closed secret door."
+        ]
+    }, 
+    {
+        "ability_score": {
+            "url": "http://www.dnd5eapi.co/api/ability-scores/6", 
+            "name": "CHA"
+        }, 
+        "index": 13, 
+        "name": "Performance", 
+        "url": "http://www.dnd5eapi.co/api/skills/13", 
+        "_id": "58f40b8dc9e7ce9f72153254", 
+        "desc": [
+            "Your Charisma (Performance) check determines how well you can delight an audience with music, dance, acting, storytelling, or some other form of entertainment."
+        ]
+    }, 
+    {
+        "ability_score": {
+            "url": "http://www.dnd5eapi.co/api/ability-scores/6", 
+            "name": "CHA"
+        }, 
+        "index": 14, 
+        "name": "Persuasion", 
+        "url": "http://www.dnd5eapi.co/api/skills/14", 
+        "_id": "58f40b8dc9e7ce9f72153255", 
+        "desc": [
+            "When you attempt to influence someone or a group of people with tact, social graces, or good nature, the GM might ask you to make a Charisma (Persuasion) check. Typically, you use persuasion when acting in good faith, to foster friendships, make cordial requests, or exhibit proper etiquette. Examples of persuading others include convincing a chamberlain to let your party see the king, negotiating peace between warring tribes, or inspiring a crowd of townsfolk."
+        ]
+    }, 
+    {
+        "ability_score": {
+            "url": "http://www.dnd5eapi.co/api/ability-scores/4", 
+            "name": "INT"
+        }, 
+        "index": 15, 
+        "name": "Religion", 
+        "url": "http://www.dnd5eapi.co/api/skills/15", 
+        "_id": "58f40b8dc9e7ce9f72153256", 
+        "desc": [
+            "Your Intelligence (Religion) check measures your ability to recall lore about deities, rites and prayers, religious hierarchies, holy symbols, and the practices of secret cults."
+        ]
+    }, 
+    {
+        "ability_score": {
+            "url": "http://www.dnd5eapi.co/api/ability-scores/2", 
+            "name": "DEX"
+        }, 
+        "index": 16, 
+        "name": "Sleight of Hand", 
+        "url": "http://www.dnd5eapi.co/api/skills/16", 
+        "_id": "58f40b8dc9e7ce9f72153257", 
+        "desc": [
+            "Whenever you attempt an act of legerdemain or manual trickery, such as planting something on someone else or concealing an object on your person, make a Dexterity (Sleight of Hand) check. The GM might also call for a Dexterity (Sleight of Hand) check to determine whether you can lift a coin purse off another person or slip something out of another person\u2019s pocket."
+        ]
+    }, 
+    {
+        "ability_score": {
+            "url": "http://www.dnd5eapi.co/api/ability-scores/2", 
+            "name": "DEX"
+        }, 
+        "index": 17, 
+        "name": "Stealth", 
+        "url": "http://www.dnd5eapi.co/api/skills/17", 
+        "_id": "58f40b8dc9e7ce9f72153258", 
+        "desc": [
+            "Make a Dexterity (Stealth) check when you attempt to conceal yourself from enemies, slink past guards, slip away without being noticed, or sneak up on someone without being seen or heard."
+        ]
+    }, 
+    {
+        "ability_score": {
+            "url": "http://www.dnd5eapi.co/api/ability-scores/5", 
+            "name": "WIS"
+        }, 
+        "index": 18, 
+        "name": "Survival", 
+        "url": "http://www.dnd5eapi.co/api/skills/18", 
+        "_id": "58f40b8dc9e7ce9f7215325c", 
+        "desc": [
+            "The GM might ask you to make a Wisdom (Survival) check to follow tracks, hunt wild game, guide your group through frozen wastelands, identify signs that owlbears live nearby, predict the weather, or avoid quicksand and other natural hazards."
+        ]
+    }
+]
