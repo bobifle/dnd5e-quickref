@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <title>features quick reference</title>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/quickref.css">
+    <link rel="stylesheet" type="text/css" href="css/icons.css">
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora:700' rel='stylesheet' type='text/css'>
+    <!-- Javascript -->
+    <script type="text/javascript" src="js/jquery/jquery.min.js" charset="utf-8"></script>
+</head>
+<body class="page-background">
+    <div class="page fontsize" data-size="fullscreen">
+        <div id="section-features" class="section-container">
+            <div class="section-title"> Features </div>
+            <div class="section-content">
+                <div class="section-row section-subtitle text fontsize"> Barbarian feats </div>
+                <div class="section-row" id="features-barbarian"></div>
+            </div>
+        </div>
+	</div>
+
+    <!-- Modal -->
+    <div class="modal" id="modal" tabindex="-1">
+        <div class="modal-backdrop" id="modal-backdrop"></div>
+        <div class="modal-dialog modalsize">
+            <div class="section-container modal-container" id="modal-container">
+                <div class="section-title" id="modal-title">
+                    Modal title<span class="float-right">Action</span>
+                </div>
+                <div class="section-content">
+                    <div class="section-row section-subtitle text" id="modal-subtitle">
+                        Subtitle
+                    </div>
+                    <div class="section-row text">
+                        <div id="modal-bullets">
+                        </div>
+                    </div>
+                    <div class="section-row text" id="modal-reference">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Data -->
+    <script type="text/javascript" src="js/data_spells.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/data_features.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/lucy.js" charset="utf-8"></script>
+</body>
+</html>
