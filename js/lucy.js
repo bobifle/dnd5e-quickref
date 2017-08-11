@@ -10,9 +10,35 @@ function item_getIcon(data) {
 	return icon;
 }
 
+function item_getSubtitle(data) {
+	if (data.subtitle) {return data.subtitle;};
+	if (data.casting_time) {
+		sub = data.casting_time + ", " + data.range + ", ";
+		if (typeof data.components == "string") { sub += data.components;};
+		if (typeof data.components != "string") { sub += data.components.join("");};
+		if (data.concentration == "yes") {sub += ", con"}
+		if (data.ritual == "yes") {sub += ", ritual"}
+		return sub;
+	}
+	return "";
+}
+function item_getBullets(data) {
+	if (data.bullets) {return data.bullets;};
+	bullets = [];
+	if (data.classes) { // extracted from online dnd api
+		bullets.push("Level " + data.level + " " + data.school.name + " spell for"+ data.classes.map(function (e) {return e["name"];}).join(","));
+		bullets.push('casting time: ' + data.casting_time + ', Duration: '+ data.duration + ', Range: ' + data.range);
+		bullets.push('concentration: ' + data.concentration + ', ritual: ' + data.ritual)
+		bullets.push('material: ' + data.material)
+		bullets.push(data.desc);
+	}
+	return bullets;
+}
+
+
 function add_quickref_item(parent, data, type) {
     var icon = item_getIcon(data);
-    var subtitle = data.subtitle || "";
+    var subtitle = item_getSubtitle(data);
     var title = data.title || data.name || "[no title]";
 
     var item = document.createElement("div");
@@ -38,8 +64,8 @@ function add_quickref_item(parent, data, type) {
 
 function show_modal(data, color, type) {
     var title = data.title || data.name || "[no title]";
-    var subtitle = data.description || data.subtitle || "";
-    var bullets = data.bullets || data.desc || [];
+    var subtitle = item_getSubtitle(data)
+    var bullets = item_getBullets(data);
     var reference = data.reference || data.page || "";
     type = type || "";
     color = color || "black"
