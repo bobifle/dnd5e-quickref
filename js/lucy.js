@@ -115,12 +115,14 @@ function init() {
 	if (typeof data_bard !== 'undefined') {fill_section(data_bard, "basic-bard", "Rogue");};
 	if (typeof data_movement !== 'undefined') {fill_section(data_movement, "basic-movement", "Rogue");};
 	if (typeof data_bonus !== 'undefined') {fill_section(data_bonus, "basic-bonus", "Rogue");};
-	data_spells.sort(function (a,b) {if (a.level<b.level) return -1; if(a.level>b.level) {return 1}; return 0;})
-	fill_section(data_spells, "basic-spells", "Spell");
-
-	var barb_feat = data_features.filter(function (e) {return e["class"]["name"] == "Barbarian"});
-	fill_section(barb_feat, 'features-barbarian', 'Feat')
-
+	if (typeof data_spells !== 'undefined') {
+		data_spells.sort(function (a,b) {if (a.level<b.level) return -1; if(a.level>b.level) {return 1}; return 0;})
+		fill_section(data_spells, "basic-spells", "Spell");
+	}
+	if (typeof data_features !== 'undefined') {
+		var barb_feat = data_features.filter(function (e) {return e["class"]["name"] == "Barbarian"});
+		fill_section(barb_feat, 'features-barbarian', 'Feat')
+	}
 	var modal = document.getElementById("modal");
 	modal.onclick = hide_modal;
 }
